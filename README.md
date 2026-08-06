@@ -1,5 +1,7 @@
 # ising-bench
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20470129.svg)](https://doi.org/10.5281/zenodo.20470129)
+
 Learned-vs-memoryless comparative benchmarking for quantum error structure,
 built around NVIDIA's open **Ising** quantum-AI models (released 2026-04-14,
 Apache-2.0) and the existing `quantum_central_db` measurement archive.
