@@ -26,7 +26,7 @@ memoryless baselines (which cannot).
   decoder training and real-data work; caps large simulated code patches.
 
 ### Verified-working stack
-```
+```bash
 cuda-quantum-cu12        # CUDA-Q, target 'nvidia' = cuStateVec fp32  ✓ sees GPU
 torch (cu121)            # learned decoders                            ✓ sees CUDA
 numpy scipy matplotlib pandas scikit-learn
@@ -53,7 +53,7 @@ python -c "import torch; print(torch.cuda.is_available(), torch.cuda.get_device_
 ---
 
 ## Directory layout
-```
+```text
 ~/ising-bench/
   src/                  scripts (below)
   data/raw/             untouched source data
@@ -114,11 +114,6 @@ Source: `~/quantum_central_db/` (~602 MB).
 
 4. **`circuit_name` is uninformative** — `remote_job` for all multi-qubit jobs,
    missing for width-2. So we do NOT know what state each circuit prepared.
-
-5. **Two files deliberately excluded from all globs** (not result files,
-   irrelevant to this work): `Phishing_exfiltration_script.json`,
-   `Ransomware_detector_circuit.json`. Loaders skip any path containing
-   `:sec`, `phishing`, or `exfiltration`.
 
 ---
 
