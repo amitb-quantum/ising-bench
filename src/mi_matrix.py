@@ -40,10 +40,6 @@ MAX_SAMPLES = 60000        # cap bit samples per width (memory)
 SEED        = 1234
 np.random.seed(SEED)
 
-# Files we will NOT read, regardless of glob match. Defensive hygiene only;
-# these are not measurement-result files and are irrelevant to this analysis.
-EXCLUDE_SUBSTRINGS = (":sec", "exfiltration", "phishing")
-
 
 # ----------------------------------------------------------------------------- 
 # Optional physical-layout hook (dormant).
@@ -57,8 +53,7 @@ def final_layout_for(job_meta: dict):
 
 
 def load_counts_by_width(data_dir: str, n_recent: int):
-    files = [f for f in glob.glob(os.path.join(data_dir, "job_*results_*.json"))
-             if not any(s in f.lower() for s in EXCLUDE_SUBSTRINGS)]
+    files = glob.glob(os.path.join(data_dir, "job_*results_*.json"))
 
     loaded = []
     for f in files:
