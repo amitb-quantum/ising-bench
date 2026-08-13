@@ -1,0 +1,25 @@
+# --- IP protection: never commit/deposit these ---
+provenance_private/
+*.qasm
+yz_submit_FILLED.py
+**/qasm_*.qasm
+# Byte-compiled / Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Stage directories and zip bundles
+_zenodo_stage/
+_zenodo_v13_stage/
+_reanalysis/
+*.zip
+
+# Private or unredacted experimental provenance
+provenance_private/
+
+# Large raw data files (keep scripts in src/, optionally track sample output JSONs)
+data/
+results/
