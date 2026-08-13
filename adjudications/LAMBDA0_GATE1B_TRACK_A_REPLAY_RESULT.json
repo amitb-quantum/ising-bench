@@ -1,0 +1,186 @@
+{
+  "schema": "ising-bench.lambda0-gate1b-replay.v1",
+  "validity": "ACCEPT",
+  "replay_identity": "CONFIRM",
+  "validity_checks": [
+    {
+      "name": "sha256:src/run_lambda0_parity_gate.py",
+      "actual": "231c51d3aa9e81dba927cb7f419c6718186e9822c20ddcf3b8133d870a2836b9",
+      "expected": "231c51d3aa9e81dba927cb7f419c6718186e9822c20ddcf3b8133d870a2836b9",
+      "pass": true
+    },
+    {
+      "name": "sha256:src/ising_benchmark.py",
+      "actual": "e61f028b7f3604f3f5025e65fd06f33debea76e6e5ff81117a12776d58b5835b",
+      "expected": "e61f028b7f3604f3f5025e65fd06f33debea76e6e5ff81117a12776d58b5835b",
+      "pass": true
+    },
+    {
+      "name": "sha256:src/exact_lambda0_oracle.py",
+      "actual": "c5506eb138c93ae776254d927cb62f48f0fec6fbf7769f3666148a683e8a03d5",
+      "expected": "c5506eb138c93ae776254d927cb62f48f0fec6fbf7769f3666148a683e8a03d5",
+      "pass": true
+    },
+    {
+      "name": "sha256:adjudications/LAMBDA0_PARITY_GATE_V1_RAW_RESULT.json",
+      "actual": "76c752f85ec8897a9ce152ab184bc4ed0d3ce171d2ce0782d3b51a3969d68d50",
+      "expected": "76c752f85ec8897a9ce152ab184bc4ed0d3ce171d2ce0782d3b51a3969d68d50",
+      "pass": true
+    },
+    {
+      "name": "sha256:adjudications/LAMBDA0_GATE1B_EXACT_ORACLE_REFERENCE.json",
+      "actual": "4a3ec40b2ceef00c3b68eab9e7e93c3650914942a28b7257b66af0f795909154",
+      "expected": "4a3ec40b2ceef00c3b68eab9e7e93c3650914942a28b7257b66af0f795909154",
+      "pass": true
+    },
+    {
+      "name": "python",
+      "actual": "3.11.10",
+      "expected": "3.11.10",
+      "pass": true
+    },
+    {
+      "name": "torch",
+      "actual": "2.5.1+cu121",
+      "expected": "2.5.1+cu121",
+      "pass": true
+    },
+    {
+      "name": "numpy",
+      "actual": "2.4.6",
+      "expected": "2.4.6",
+      "pass": true
+    },
+    {
+      "name": "sklearn",
+      "actual": "1.8.0",
+      "expected": "1.8.0",
+      "pass": true
+    },
+    {
+      "name": "torch_threads",
+      "actual": 24,
+      "expected": 24,
+      "pass": true
+    },
+    {
+      "name": "torch_interop_threads",
+      "actual": 24,
+      "expected": 24,
+      "pass": true
+    },
+    {
+      "name": "CUDA_VISIBLE_DEVICES",
+      "actual": "",
+      "expected": "",
+      "pass": true
+    },
+    {
+      "name": "torch_cuda_available",
+      "actual": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "name": "oracle_table_sha256",
+      "actual": "e27c84d604596b320125adeef0ed2effe25cfb4ffc265b8490cea36af81cfcb3",
+      "expected": "e27c84d604596b320125adeef0ed2effe25cfb4ffc265b8490cea36af81cfcb3",
+      "pass": true
+    },
+    {
+      "name": "oracle_bayes_ler",
+      "actual": "373445699/38443359375",
+      "expected": "373445699/38443359375",
+      "pass": true
+    },
+    {
+      "name": "oracle_rows",
+      "actual": 64,
+      "expected": 64,
+      "pass": true
+    }
+  ],
+  "anchor_checks": {
+    "name": {
+      "actual": "C",
+      "expected": "C",
+      "match": true
+    },
+    "best_epoch": {
+      "actual": 97,
+      "expected": 97,
+      "match": true
+    },
+    "validation_ler": {
+      "actual": "0.010600",
+      "expected": "0.010600",
+      "match": true
+    },
+    "validation_bce": {
+      "actual": "0.044843",
+      "expected": "0.044843",
+      "match": true
+    },
+    "final_ler": {
+      "actual": "0.009550",
+      "expected": "0.009550",
+      "match": true
+    }
+  },
+  "diagnostics": {
+    "epochs_executed": 127,
+    "validation_ler_raw": 0.0106,
+    "validation_bce_raw": 0.04484331235289574,
+    "final_ler_raw": 0.00955,
+    "final_bce_raw": 0.04164905846118927
+  },
+  "oracle_performance": {
+    "verdict": "REJECT",
+    "bayes_table_sha256": "e27c84d604596b320125adeef0ed2effe25cfb4ffc265b8490cea36af81cfcb3",
+    "learned_table_sha256": "2b627d85829bd31b86713f648b0cd306fcafb5c3a1159315bfe46db3c047c1b2",
+    "table_match": false,
+    "differing_entries": [
+      {
+        "syndrome": "01001101",
+        "learned": 0,
+        "oracle": 1
+      },
+      {
+        "syndrome": "01011111",
+        "learned": 0,
+        "oracle": 1
+      },
+      {
+        "syndrome": "01111011",
+        "learned": 0,
+        "oracle": 1
+      },
+      {
+        "syndrome": "10111110",
+        "learned": 0,
+        "oracle": 1
+      },
+      {
+        "syndrome": "11101101",
+        "learned": 0,
+        "oracle": 1
+      }
+    ],
+    "differing_entry_count": 5,
+    "exact_population_ler_fraction": "3029392727/307546875000",
+    "exact_population_ler_float": 0.009850182112889296,
+    "bayes_ler_fraction": "373445699/38443359375",
+    "exact_excess_ler_fraction": "8365427/61509375000",
+    "exact_excess_ler_float": 0.000136002471168013
+  },
+  "artifacts": {
+    "state_dict": {
+      "path": "results/lambda0_gate1b_replay/candidate_c_replay_state_dict.pt",
+      "sha256": "9b6a33307add051cbfadaf9a12078c4edd93558d77bb2c144c3cebeb4cca364d"
+    },
+    "decision_table": {
+      "path": "results/lambda0_gate1b_replay/candidate_c_replay_table.json",
+      "sha256": "4e1ddda3fd7be3c46581ef3875873de7938af702efbc617665368ffe50888960"
+    }
+  }
+}

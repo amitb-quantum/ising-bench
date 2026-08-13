@@ -1,0 +1,262 @@
+{
+  "schema": "ising-bench.lambda0-gate1b-model-table.v1",
+  "rows": [
+    {
+      "syndrome": "00000000",
+      "decision": 0
+    },
+    {
+      "syndrome": "00000011",
+      "decision": 0
+    },
+    {
+      "syndrome": "00001100",
+      "decision": 1
+    },
+    {
+      "syndrome": "00001111",
+      "decision": 0
+    },
+    {
+      "syndrome": "00010001",
+      "decision": 0
+    },
+    {
+      "syndrome": "00010010",
+      "decision": 0
+    },
+    {
+      "syndrome": "00011101",
+      "decision": 0
+    },
+    {
+      "syndrome": "00011110",
+      "decision": 1
+    },
+    {
+      "syndrome": "00100100",
+      "decision": 1
+    },
+    {
+      "syndrome": "00100111",
+      "decision": 0
+    },
+    {
+      "syndrome": "00101000",
+      "decision": 0
+    },
+    {
+      "syndrome": "00101011",
+      "decision": 0
+    },
+    {
+      "syndrome": "00110101",
+      "decision": 0
+    },
+    {
+      "syndrome": "00110110",
+      "decision": 1
+    },
+    {
+      "syndrome": "00111001",
+      "decision": 0
+    },
+    {
+      "syndrome": "00111010",
+      "decision": 0
+    },
+    {
+      "syndrome": "01000001",
+      "decision": 0
+    },
+    {
+      "syndrome": "01000010",
+      "decision": 0
+    },
+    {
+      "syndrome": "01001101",
+      "decision": 0
+    },
+    {
+      "syndrome": "01001110",
+      "decision": 0
+    },
+    {
+      "syndrome": "01010000",
+      "decision": 0
+    },
+    {
+      "syndrome": "01010011",
+      "decision": 0
+    },
+    {
+      "syndrome": "01011100",
+      "decision": 0
+    },
+    {
+      "syndrome": "01011111",
+      "decision": 0
+    },
+    {
+      "syndrome": "01100101",
+      "decision": 0
+    },
+    {
+      "syndrome": "01100110",
+      "decision": 1
+    },
+    {
+      "syndrome": "01101001",
+      "decision": 1
+    },
+    {
+      "syndrome": "01101010",
+      "decision": 1
+    },
+    {
+      "syndrome": "01110100",
+      "decision": 1
+    },
+    {
+      "syndrome": "01110111",
+      "decision": 0
+    },
+    {
+      "syndrome": "01111000",
+      "decision": 1
+    },
+    {
+      "syndrome": "01111011",
+      "decision": 0
+    },
+    {
+      "syndrome": "10000100",
+      "decision": 0
+    },
+    {
+      "syndrome": "10000111",
+      "decision": 0
+    },
+    {
+      "syndrome": "10001000",
+      "decision": 1
+    },
+    {
+      "syndrome": "10001011",
+      "decision": 0
+    },
+    {
+      "syndrome": "10010101",
+      "decision": 1
+    },
+    {
+      "syndrome": "10010110",
+      "decision": 1
+    },
+    {
+      "syndrome": "10011001",
+      "decision": 1
+    },
+    {
+      "syndrome": "10011010",
+      "decision": 0
+    },
+    {
+      "syndrome": "10100000",
+      "decision": 1
+    },
+    {
+      "syndrome": "10100011",
+      "decision": 0
+    },
+    {
+      "syndrome": "10101100",
+      "decision": 0
+    },
+    {
+      "syndrome": "10101111",
+      "decision": 0
+    },
+    {
+      "syndrome": "10110001",
+      "decision": 1
+    },
+    {
+      "syndrome": "10110010",
+      "decision": 0
+    },
+    {
+      "syndrome": "10111101",
+      "decision": 1
+    },
+    {
+      "syndrome": "10111110",
+      "decision": 0
+    },
+    {
+      "syndrome": "11000101",
+      "decision": 0
+    },
+    {
+      "syndrome": "11000110",
+      "decision": 0
+    },
+    {
+      "syndrome": "11001001",
+      "decision": 1
+    },
+    {
+      "syndrome": "11001010",
+      "decision": 0
+    },
+    {
+      "syndrome": "11010100",
+      "decision": 1
+    },
+    {
+      "syndrome": "11010111",
+      "decision": 1
+    },
+    {
+      "syndrome": "11011000",
+      "decision": 1
+    },
+    {
+      "syndrome": "11011011",
+      "decision": 0
+    },
+    {
+      "syndrome": "11100001",
+      "decision": 0
+    },
+    {
+      "syndrome": "11100010",
+      "decision": 1
+    },
+    {
+      "syndrome": "11101101",
+      "decision": 0
+    },
+    {
+      "syndrome": "11101110",
+      "decision": 1
+    },
+    {
+      "syndrome": "11110000",
+      "decision": 0
+    },
+    {
+      "syndrome": "11110011",
+      "decision": 1
+    },
+    {
+      "syndrome": "11111100",
+      "decision": 0
+    },
+    {
+      "syndrome": "11111111",
+      "decision": 0
+    }
+  ],
+  "decision_table_sha256": "2b627d85829bd31b86713f648b0cd306fcafb5c3a1159315bfe46db3c047c1b2"
+}
