@@ -69,10 +69,6 @@ def generate_surface_code_data(distance: int, n_samples: int, p_err: float):
     We simulate noise -> stabilizer measurement -> logical parity, producing
     the exact (syndrome -> logical flip) supervised task a decoder solves.
     """
-    import cudaq
-
-    cudaq.set_target("nvidia")  # cuStateVec fp32 on the A1000
-
     d = distance
     n_data = d * d
     n_stab = d * d - 1  # X- and Z-type stabilizers on the rotated lattice
