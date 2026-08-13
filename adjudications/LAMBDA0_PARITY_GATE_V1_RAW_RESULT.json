@@ -1,0 +1,65 @@
+{
+  "schema": "ising-bench.lambda0-parity-gate.v1",
+  "seed": 1234,
+  "dataset": {
+    "n": 100000,
+    "distance": 3,
+    "p_err": 0.05,
+    "train": 60000,
+    "validation": 20000,
+    "test": 20000
+  },
+  "prereg_sha256": "5ba9c015a157f9d56bd148760b7a6eda76e581003c4da8a8c844c2925c677590",
+  "amendment_001_sha256": "b5ed2fde55a61cacfe18e22ac3f5dcdf92a1cfe2f8fa898a3f23cc149771b180",
+  "candidate_results": [
+    {
+      "name": "A",
+      "config": {
+        "batch_size": 256,
+        "lr": 0.001,
+        "max_epochs": 200,
+        "patience": 20
+      },
+      "best_epoch": 44,
+      "epochs_executed": 64,
+      "validation_ler": 0.0106,
+      "validation_bce": 0.04491729661822319
+    },
+    {
+      "name": "B",
+      "config": {
+        "batch_size": 512,
+        "lr": 0.001,
+        "max_epochs": 200,
+        "patience": 20
+      },
+      "best_epoch": 42,
+      "epochs_executed": 62,
+      "validation_ler": 0.0106,
+      "validation_bce": 0.04491866007447243
+    },
+    {
+      "name": "C",
+      "config": {
+        "batch_size": 256,
+        "lr": 0.0003,
+        "max_epochs": 400,
+        "patience": 30
+      },
+      "best_epoch": 97,
+      "epochs_executed": 127,
+      "validation_ler": 0.0106,
+      "validation_bce": 0.04484331235289574
+    }
+  ],
+  "selected_candidate": "C",
+  "final": {
+    "learned_ler": 0.00955,
+    "learned_bce": 0.04164905846118927,
+    "logistic_ler": 0.0234,
+    "delta_ler": -0.01385,
+    "bootstrap_upper95": -0.0124,
+    "noninferiority_margin": 0.005,
+    "verdict": "PASS"
+  }
+}
